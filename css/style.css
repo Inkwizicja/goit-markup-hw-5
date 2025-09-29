@@ -771,7 +771,10 @@ background-color: #31D0AA;
   border: none; 
   fill: #ffffff;
 }
-
+.modal-close:hover .icon-modal,
+.modal-close:focus .icon-modal{
+fill:#fff;
+}
 
 .modal {
  padding: 72px 24px 24px 24px;
@@ -892,7 +895,7 @@ resize: none;
   color: rgba(46, 47, 66, 0.4);
 }
 
- .check:checked + .modal-check-box > {
+ .check:checked + .modal-check-label > .modal-check-box {
 
 background-color: #404bbf; 
 border: none;
@@ -908,7 +911,6 @@ font-size: 12px;
 line-height: 1.16667;
 letter-spacing: 0.04em;
 color: #8e8f99;
-display: flex;
 align-items: center;
 margin-bottom: 30px;
 line-height: 1.17; 
